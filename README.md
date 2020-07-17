@@ -1,0 +1,1 @@
+A login-register form with javascript validation, where you can set a username + password to the local storage so if you close the window and open it again, you can "log in" with your username and password 

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/6d59e6f2e7.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./styles/style.css">
+
+	<body>
+		
+		<img src="./styles/logBG.jpg" alt="mushrooms" id="loginBg"></img>
+		
+		<div class="container">
+			<div class="login-border" id="login-border">
+				<div class="login-header" id="login-header">
+					<h1><span class="colored-text">L</span>ogIn</h1>
+				</div>
+					
+				<div class="login-body" id="login-body">
+					<div class="login-inputDiv">
+						<i class="far fa-user"></i>
+						<input type="text" placeholder="username" class="login-inputfield" id="login-username">
+					</div>
+					
+					<div class="login-inputDiv">
+						<i class="fas fa-unlock-alt"></i>
+						<input type="password" placeholder="password" class="login-inputfield" id="login-password">
+					</div>
+					
+					<div class="login-inputDiv">
+						<input type="checkbox" id="cbRemember">
+						<p>Remember me</p>
+					</div>
+					
+					<button class="btn login-btn" id="login-btn">Log In</button>
+					<p id="login-warning"></p>
+					<p>username: user</p>
+					<p>password: pw</p>
+					<p>(Change theese with register)</p>
+				</div>
+	
+				<div class="login-footer" id="login-footer">
+					<a href="#" id="forgot-pw">Forgot password?</a>
+					<a href="#" id="register-link">Register now!</a>
+				</div>
+			</div>
+	
+
+			<div class="loggedIn-text" id="loggedInText">
+				<h1>YO<span class="colored-text">U</span> LOGGED IN</h1>
+			</div>
+
+	
+			<div class="reg-border" id="reg-border">
+				<div class="reg-header">
+					<h1><span class="colored-text">R</span>egister</h1>
+				</div>
+				
+				<div class="reg-body">
+					<div class="reg-inputDiv">
+						<p>Username</p>
+						<input type="text" id="reg-username" required>
+					</div>
+					<div class="reg-inputDiv">
+						<p>Password</p>
+						<input type="password" id="reg-password">
+					</div>
+					<div class="reg-inputDiv">
+						<p>Confirm Password</p>
+						<input type="password" id="reg-passwordRe">
+					</div>
+					<div class="reg-inputDiv">
+						<p>Email</p>
+						<input type="email" id="reg-email">
+					</div>
+					<div class="reg-inputDiv" id="reg-gender">
+						<input type="radio" name="gender" id="gender-male" value="male">Male
+						<input type="radio" name="gender" id="gender-female" value="female">Female
+						<input type="radio" name="gender" id="gender-other" value="other">Other
+					</div>
+				</div>
+				<div class="reg-footer">
+					<div class="reg-inputDiv" id="cbDiv">
+						<p class="terms">I have read and accept our <a href="#">Terms of Use</a></p>
+						<input type="checkbox" class="cb-privacy" id="cb-privacy">
+					</div>
+					<p class="reg-warning" id="reg-warning"></p>
+					<button class="btn reg-btn" id="reg-btn">Register</button>
+				</div>
+			</div>	
+		</div>
+		
+		<script src="./js/main.js"></script>
+	</body>
+ </head>
+</html>
